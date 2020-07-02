@@ -1,4 +1,4 @@
-# NestJS MVC + Web Components
+# NestJS MVC + Stimulus
 
 1. Install dependencies with `yarn`
 
