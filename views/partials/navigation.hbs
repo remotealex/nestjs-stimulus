@@ -1,0 +1,15 @@
+<nav>
+    <li><a href="/">Home</a></li>
+    <br />
+    <li><a href="/about">About</a></li>
+    <br />
+    {{#if user}}
+    <li><a href="/profile">Profile</a></li>
+    <br />
+    <li>
+        <a href="/logout" data-turbolinks="false">Log out</a>
+    </li>
+    {{else}}
+    <li><a href="/login">Log in</a></li>
+    {{/if}}
+</nav>

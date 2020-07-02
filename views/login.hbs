@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Login page</title>
+  <script src="/bundle.js"></script>
+</head>
+
+<body>
+  {{> navigation }}
+  <form action="/login" method="POST">
+    {{#if error}}
+    <div>{{ error }}</div>
+    {{/if}}
+    <input type="text" name="username" placeholder="username" value="alex" />
+    <button type="submit">Login</button>
+  </form>
+</body>
+
+</html>
