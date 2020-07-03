@@ -1,11 +1,23 @@
 {{> head title="Login" }}
 
-<form action="/login" method="POST">
+<form action="/login" method="POST" class="login">
   {{#if error}}
   <div>{{ error }}</div>
   {{/if}}
-  <input type="text" name="username" placeholder="username" value="alex" />
-  <button type="submit">Login</button>
+  <fieldset>
+    <label for="name">Username</label>
+    <input type="text" id="name" name="username" placeholder="username" value="alex" />
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" disabled />
+    <button type="submit">Login</button>
+  </fieldset>
 </form>
+
+<style>
+  .login {
+    margin: 0 auto;
+    max-width: 500px;
+  }
+</style>
 
 {{> footer }}
