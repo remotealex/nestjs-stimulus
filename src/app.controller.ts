@@ -13,13 +13,6 @@ export class AppController {
     return { title: 'Home page', user, userString: JSON.stringify(user) };
   }
 
-  @Get('about')
-  @Render('about')
-  @Public()
-  aboutView(@User() user) {
-    return { title: 'About page', user, userString: JSON.stringify(user) };
-  }
-
   @Get('profile')
   @Render('profile')
   profileView(@User() user) {

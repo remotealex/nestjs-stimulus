@@ -1,15 +1,5 @@
-<!DOCTYPE html>
-<html>
+{{> head title="Your profile" }}
 
-<head>
-  <meta charset="utf-8" />
-  <title>Your profile</title>
-  <script src="/bundle.js"></script>
-</head>
+<div>Your username: {{ user.username }}</div>
 
-<body>
-  {{> navigation }}
-  <div>Your username: {{ user.username }}</div>
-</body>
-
-</html>
+{{> footer }}

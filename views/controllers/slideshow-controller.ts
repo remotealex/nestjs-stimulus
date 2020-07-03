@@ -1,20 +1,27 @@
 import { Controller } from 'stimulus';
 
 export default class extends Controller {
+  numSlideTargets = 0;
   slideTargets: any[];
 
   static targets = ['slide'];
 
   initialize() {
+    this.numSlideTargets = this.slideTargets.length;
     this.showCurrentSlide();
   }
 
   next() {
-    this.index = (parseInt(this.index, 10) + 1).toString();
+    const nextIdx = parseInt(this.index, 10) + 1;
+    this.index = nextIdx > this.numSlideTargets - 1 ? '0' : nextIdx.toString();
   }
 
   previous() {
-    this.index = (parseInt(this.index, 10) - 1).toString();
+    const previousIdx = parseInt(this.index, 10) - 1;
+    this.index = (previousIdx < 0
+      ? this.numSlideTargets - 1
+      : previousIdx
+    ).toString();
   }
 
   showCurrentSlide() {

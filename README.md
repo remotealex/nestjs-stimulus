@@ -11,3 +11,13 @@
 5. Run parcel server `parcel watch views/bundle.ts -d public`
 
 6. Open [localhost:4000](http://localhost:4000)
+
+## Links
+
+- [https://milligram.io/](https://milligram.io/)
+
+- [https://stimulusjs.org/](https://stimulusjs.org/)
+
+- [https://docs.nestjs.com/](https://docs.nestjs.com/)
+
+- [https://github.com/turbolinks/turbolinks](https://github.com/turbolinks/turbolinks)
