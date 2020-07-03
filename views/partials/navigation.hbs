@@ -1,12 +1,12 @@
 <nav class="navigation __p __center">
     <h1>OpenConf</h1>
     <div>
-        <a href="/" class="{{#if isHome}}current{{/if}}">Home</a>
+        <a href="/" class="{{#if_eq current 'home'}}current{{/if_eq}}">Home</a>
         {{#if user}}
-        <a href="/profile" class="{{#if isProfile}}current{{/if}}">Profile</a>
+        <a href="/profile" class="{{#if_eq current 'profile'}}current{{/if_eq}}">Profile</a>
         <a href="/logout" data-turbolinks="false">Log out</a>
         {{else}}
-        <a href="/login" class="{{#if isLogin}}current{{/if}}">Log in</a>
+        <a href="/login" class="{{#if_eq current 'login'}}current{{/if_eq}}">Log in</a>
         {{/if}}
     </div>
 </nav>
