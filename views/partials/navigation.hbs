@@ -1,20 +1,25 @@
 <nav class="navigation __p __center">
     <h1>OpenConf</h1>
     <div>
-        <a href="/">Home</a>
+        <a href="/" class="{{#if isHome}}current{{/if}}">Home</a>
         {{#if user}}
-        <a href="/profile">Profile</a>
-        <a href="/logout">Log out</a>
+        <a href="/profile" class="{{#if isProfile}}current{{/if}}">Profile</a>
+        <a href="/logout" data-turbolinks="false">Log out</a>
         {{else}}
-        <a href="/login">Log in</a>
+        <a href="/login" class="{{#if isLogin}}current{{/if}}">Log in</a>
         {{/if}}
     </div>
 </nav>
 
 <style>
-    .navigation div a {
+    .navigation a {
+        border-bottom: 2px solid transparent;
         display: inline-block;
-        margin-bottom: 40px;
-        padding: 0 9px;
+        margin: 0 5px 40px;
+        padding: 3px 9px;
+    }
+
+    .navigation a.current {
+        border-bottom-color: #9b4dca;
     }
 </style>
