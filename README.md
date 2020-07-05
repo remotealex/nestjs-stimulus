@@ -1,4 +1,8 @@
-# NestJS MVC + Stimulus
+# OpenConf
+
+A list of all online conferences which are happening.
+
+## Built with NestJS MVC + Stimulus
 
 1. Install dependencies with `yarn`
 
@@ -12,7 +16,7 @@
 
 6. Open [localhost:4000](http://localhost:4000)
 
-## Links
+### Links
 
 - [https://milligram.io/](https://milligram.io/)
 
